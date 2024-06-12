@@ -1,0 +1,21 @@
+def calculate_bmi(weight, height):
+    bmi = weight / (height ** 2)
+    return bmi
+def bmi_category(bmi):
+    if bmi < 18.5:
+        return "น้ำหนักน้อย / ผอม", "มากกว่าคนปกติ"
+    elif 18.5 <= bmi <= 22.9:
+        return "ปกติ (สุขสภาพดี)", "เท่ากับคนปกติ"
+    elif 23 <= bmi <= 24.9:
+        return "ท้วม / โรคอ้วนระดับ1", "อันตรายระดับ 1"
+    elif 25 <= bmi <= 29.9:
+        return "อ้วน / โรคอ้วนระดับ2", "อันตรายระดับ 2"
+    else:
+        return "อ้วนมาก / โรคอ้วนระดับ3", "อันตรายระดับ 3"
+weight = 120
+height = 1.75
+bmi = calculate_bmi(weight,height)
+category,risk = bmi_category(bmi)
+print(f"BMI: {bmi:.2f}")
+print(f"อยู่ในเกณฑ์: {category}")
+print(f"ภาวะเสี่ยงต่อโรค: {risk}")
