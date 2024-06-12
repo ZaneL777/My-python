@@ -1,4 +1,5 @@
-print("----จงเขียนโปรแกรมหาพื้นที่วงกลม----")
-r = int(input("รับค่าวงกลม: "))
-area = 22/7*pow(r,2)
-print("พื้นที่วงกลมคือ " + str(r) + str(area))
+print("welcome to นรก")
+x = 10
+y = 20
+z = x + y
+print("คำตอบ\n"+str(z)+"ครับ")
